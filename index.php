@@ -1,39 +1,23 @@
 <?php
 
-include "Dog.php";
-include "Cat.php";
-include "Bird.php";
 include "Car.php";
+include "Tire.php";
+include "Train.php";
 
+// $car1 = new Car("BMW",170);
+// $car2 = new Car("Volvo",69);
+// $car1->increaseMileage(100);
+// echo Car::$describe . "<Br>";
+// Car::makeNoise();
+// echo "<br>";
 
+// $tire1 = new Tire("69inches", "winter","good");
+// echo $tire1->size." ".$tire1->type;
+// echo "<br>";
 
+$train1 = new Train("RICIBOY", "9mm", 8000);
+$train2 = new Train("RRICIBOYY", "100cm", 80);
 
-$myBird = new Bird("black", 541);
-$myBird->color = "black";
-echo $myBird->color . "<br>";
-$myBird->fly();
-
-$myBird2 = new Bird("Blue", 0,5);
-$myBird2->color = "Blue";
-$myBird2->fly();
-
-$myDog = new Dog;
-$myDog2 = new Dog;
-$myDog->color = "Black";
-
-
-$car1 = new Car("bmw", 2000);
-$car2 = new Car("audi", 40);
-$myCar->increaseMileage(240);
-
-$myDog2 = new Car;
-$myDog->color = "red";
-
-
-
-
-
-$cats = [];
-for ($i = 0; $i < 21; $i++) {
-  array_push($cats, new Cat);
-}
+$train2->increaseMileage(240);
+Train::makeNoise();
+?>

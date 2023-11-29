@@ -1,25 +1,21 @@
 <?php
 
-class bird {
-    public $color;
+class Bird {
+    public $name;
     private $age;
 
-   //konstruktors
-    public function __construct ($c, $a) {
-        $this->color = $c;
-        $this->age = $a;
+    public function __construct($cName,$cAge){
+        $this->name = $cName;
+        $this->age = $cAge;
     }
 
-
-    public function __destruct() {
-        echo $this->color . "is dead";
+    public function __destruct(){
+        echo $this->name. " ir miris" ."<br>";
     }
 
-
-
-    //ieksa metode ir funkcija
-    public function fly() {
-        echo "fly away" . $this->color . "Bird<br>";
+    public function fly(){
+        echo "Lido prom putnin " . $this->name;
     }
-
 }
+
+?>
